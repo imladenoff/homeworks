@@ -33,3 +33,11 @@ ol {
   font-size: 18px;
   font-weight: bold;
 }
+
+input:last-child {
+  background: gold;
+}
+
+input:last-child:hover{
+  -webkit-filter: brightness(90%);
+}
