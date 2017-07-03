@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <button id="alert-button">Click Me For An Alert</button>
+
+  <input type="text" id="mystring">
+
+  <p id="mystring-reversed"></p>
+
+  <script>
+  const buttonEl = document.getElementById("alert-button");
+  buttonEl.addEventListener("click", event => {
+    alert("HELLO");
+  });
+
+  const inputEl = document.getElementById("mystring");
+  const pEl = document.getElementById("mystring-reversed");
+  inputEl.addEventListener("input", () => {
+    const value = inputEl.value;
+    pEl.textContent = value.split("").reverse().join("");
+  });
+
+  pEl.addEventListener("mouseover", () => {
+    alert("YOU MOUSED OVER ME!");
+  });
+  </script>
+</body>
+</html>
