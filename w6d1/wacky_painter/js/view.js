@@ -46,8 +46,12 @@ View.prototype.exercise3 = function () {
 View.prototype.exercise4 = function () {
   //Challenge: Write your first name in every other square.
   //Result: Your name appears in every other square.
-
+  const squares = $("li");
+  console.log(squares);
   //your code here!
+  squares.each(function(idx, el) {
+    if(idx % 2 === 0){$(el).text("Isak");}
+  });
 };
 
 View.prototype.exercise5 = function () {
@@ -59,6 +63,9 @@ View.prototype.exercise5 = function () {
   //  'data-pos' of every square
 
   //your code here!
+  $('.square').on("click", (event) => {
+    ;
+  });
 };
 
 View.prototype.exercise6 = function () {

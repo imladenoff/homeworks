@@ -1,14 +1,49 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   background-color: #EEEFFF;
 }
 
+header {
+  width: 100%;
+  background: gray;
+  height: 50px;
+}
+
+nav {
+  display: inline-block;
+  float: right;
+  width: 100%;
+  background: blue;
+}
+
+/*nav ul:after {
+  content: ""; /* Empty content string */
+  display: block; /* Only block elements can clear */
+  clear: both;
+}*/
+
 h1 {
   font-size: 38px;
+  margin-bottom: 14px;
 }
 
 h2 {
   font-size: 32px;
+  margin-bottom: 15px;
+}
+
+nav ul {
+  display: flex
+  justify-content: space-between;
+  width: 50%;
+  background: white;
+  float: right;
+}
+
+nav ul li {
+  float: right;
+  list-style: none;
+  margin-left: 30px;
 }
 
 ul li a {
